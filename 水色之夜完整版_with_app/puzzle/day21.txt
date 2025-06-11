@@ -1,5 +1,0 @@
-哪個語法會正確輸出使用者名字？
-A. print(input)
-B. print(input())
-C. input(print())
-D. input = 'Tom'
