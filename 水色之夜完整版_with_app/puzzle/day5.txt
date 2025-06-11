@@ -1,0 +1,5 @@
+for i in range(3): print(i) 會輸出？
+A. 1 2 3
+B. 0 1 2
+C. 0 1 2 3
+D. 1 2
