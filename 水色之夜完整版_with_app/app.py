@@ -35,7 +35,7 @@ user_data = progress.get("user_data", {})
 
 # Streamlit UI
 st.set_page_config(page_title="水色之夜", layout="centered")
-st.title("🌌 水色之夜：21天健康解謎遊戲")
+st.title("🌌 水色之夜")
 st.markdown(f"### 📅 第 {current_day} 天")
 
 # 個人資料輸入
@@ -55,9 +55,10 @@ if st.button("📌 儲存個人資料"):
 # 建議值
 suggested_water = weight * 30
 suggested_steps = 8000
-st.markdown(f"### 💧 今日建議：
-- 建議喝水量：{suggested_water:.0f} cc
-- 建議步數：{suggested_steps} 步")
+st.markdown("### 💧 今日建議：")
+st.markdown(f"- 建議喝水量：{suggested_water:.0f} cc")
+st.markdown(f"- 建議步數：{suggested_steps} 步")
+
 
 # 打卡輸入
 real_water = st.number_input("實際喝水量（cc）", min_value=0)
